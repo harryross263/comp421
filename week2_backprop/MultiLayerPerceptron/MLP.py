@@ -135,6 +135,7 @@ class MultiLayerPerceptron():
 
 
 '''
+'''
 #test
 #binary class problem xtrain[0] < xtrain[1] -> class 0  otherwise class 1
 
@@ -148,5 +149,5 @@ ytrain =np.asarray([[1],[1],[1],[1],[0],[0],[0]])
 
 model.train(xtrain,ytrain,epocs=1000)
 print  model.predict(xtrain)
-'''
+
             
