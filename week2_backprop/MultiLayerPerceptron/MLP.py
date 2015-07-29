@@ -7,7 +7,7 @@ class MultiLayerPerceptron():
     Multi Layer Perceptron
     '''
     
-    def __init__(self ,netStruct ,actv=None ,dActv=None ,eta=0.2):
+    def __init__(self ,netStruct ,actv=None ,dActv=None ,eta=0.2, trainAlg='BackProp'):
         
         '''        
         parameters
@@ -19,6 +19,9 @@ class MultiLayerPerceptron():
                     first derivative of the activation function w.r.t its input
               eta: scalar
                     learning rate used in back propagation                
+                    
+              trainingAlg: string , 
+                         can be set to 'BACK_PROP' (back propagation) or 'ST_BACK_PROP' (stochastic back propagation)  
         '''
     
         self.eta = eta
@@ -35,6 +38,10 @@ class MultiLayerPerceptron():
             #weights are initialized randomly 
             self.weights.append( np.random.uniform( size=layerSize ).reshape( layerShape ) )
             #self.weights.append( np.ones(shape= layerShape ) )
+        self.trainAlg = self.BackProp
+        if trainAlg == 'ST_BACK_PROP':
+            self.trainAlg = self.StochBackProp
+            
 
 
     def predict(self,X):       
@@ -79,39 +86,8 @@ class MultiLayerPerceptron():
         return layersOut
 
 
-
     
-    def train(self ,xTrain ,yTrain ,epocs=1000,plotError=True ):
-        '''
-        parameters
-            xTrain:2d numpy array, shape: (numberofFeatureVectors, numberofFeatures)
-            yTrain:2d numpy array, shape: (numberofFeatureVectors, numberofOutputs)
-        trains the network using stochastic gradient descent
-        '''
-        numSamples = xTrain.shape[0]
-        
-        indexList = [i for i in range( numSamples )]
-        errorList=[]
-        for epoc in xrange(epocs):    
-            #shuffle the training set                    
-            np.random.shuffle(indexList )
-            # save the current weights  
-            #oldWeights = [ item for item in self.weights ]            
-            for index in indexList:
-                errors=[]
-                layersOut = self.forwardPass( xTrain[index] )
-                error =  layersOut[-1] - yTrain[index]                 
-                self.backwardPass( error ,layersOut[:-1] )
-                if plotError:   
-                    errors.append(np.abs( np.sum( error ) ) )
-            if plotError:
-                errorList.append(np.average( np.asarray(errors) ) )
-        if plotError:            
-            plt.plot(errorList,)
-            plt.title('Training Error')
-            plt.ylabel('Error')
-            plt.xlabel('Iteration')
-            plt.show()
+    
                 
     def backwardPass(self ,error ,layersOut ):
         '''
@@ -131,23 +107,70 @@ class MultiLayerPerceptron():
             # update the weights in the layer i        
             self.weights[i] -= self.eta* dE_dw
             i-=1
-             
+            
+            
+            
+    def BackProp(self,xTrain,yTrain,epocs):
+        numSamples = xTrain.shape[0]
+        
+        for epoc in range(epocs):    
+            errors=[]
+            layersOut = self.forwardPass( xTrain )
+            error = layersOut[-1] - yTrain
+            self.backwardPass( error ,layersOut[:-1] )
+            errors.append(np.abs( np.sum( error**2 ) ) )
+            yield np.average(errors)
 
-
-'''
-'''
+                 
+    def StochBackProp(self,xTrain,yTrain,epocs):
+        numSamples = xTrain.shape[0]
+        
+        indexList = [i for i in range( numSamples )]
+        for epoc in range(epocs):    
+            #shuffle the training set                    
+            np.random.shuffle(indexList )
+            # save the current weights  
+            #oldWeights = [ item for item in self.weights ]            
+            for index in indexList:
+                errors=[]
+                layersOut = self.forwardPass( xTrain[index] )
+                error =  layersOut[-1] - yTrain[index]                 
+                self.backwardPass( error ,layersOut[:-1] )
+                # sum of square error
+                errors.append(np.abs( np.sum( error**2 ) ) )            
+            yield np.average(errors)
+            
+            
+    def train(self ,xTrain ,yTrain ,epocs=1000):
+        '''
+        parameters
+            xTrain:2d numpy array, shape: (numberofFeatureVectors, numberofFeatures)
+            yTrain:2d numpy array, shape: (numberofFeatureVectors, numberofOutputs)
+        trains the network using stochastic gradient descent
+        '''
+        return list(self.trainAlg(xTrain, yTrain,epocs))
+    
+    
+    
+    
 #test
 #binary class problem xtrain[0] < xtrain[1] -> class 0  otherwise class 1
 
     
-model=MultiLayerPerceptron(actv=sigmoid,dActv=dSigmoid,netStruct=(2,5,1),eta=0.2)
+model=MultiLayerPerceptron(actv=sigmoid,dActv=dSigmoid,netStruct=(2,5,1),eta=0.2,trainAlg ='ST_BACK_PROP')
 
 
 xtrain = np.asarray([[1.3,0],[1.1,0.5],[3,1.7],[4,2],[2,2.5],[4,7.8],[9,9.1]])
 
 ytrain =np.asarray([[1],[1],[1],[1],[0],[0],[0]])
 
-model.train(xtrain,ytrain,epocs=1000)
+errorList = model.train(xtrain,ytrain,epocs=300)
+plt.plot(errorList)
+plt.title('Training Error')
+plt.ylabel('SSE')
+plt.xlabel('Iteration')
+plt.show()
+
 print  model.predict(xtrain)
 
             
