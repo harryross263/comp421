@@ -157,14 +157,14 @@ class MultiLayerPerceptron():
 #binary class problem xtrain[0] < xtrain[1] -> class 0  otherwise class 1
 
     
-model=MultiLayerPerceptron(actv=sigmoid,dActv=dSigmoid,netStruct=(2,5,1),eta=0.2,trainAlg ='ST_BACK_PROP')
-
+#model=MultiLayerPerceptron(actv=sigmoid,dActv=dSigmoid,netStruct=(2,5,1),eta=0.2,trainAlg ='ST_BACK_PROP')
+model=MultiLayerPerceptron(actv=tanh,dActv=dTanh,netStruct=(2,5,1),eta=0.2,trainAlg ='ST_BACK_PROP')
 
 xtrain = np.asarray([[1.3,0],[1.1,0.5],[3,1.7],[4,2],[2,2.5],[4,7.8],[9,9.1]])
 
 ytrain =np.asarray([[1],[1],[1],[1],[0],[0],[0]])
 
-errorList = model.train(xtrain,ytrain,epocs=300)
+errorList = model.train(xtrain,ytrain,epocs=1000)
 plt.plot(errorList)
 plt.title('Training Error')
 plt.ylabel('SSE')
