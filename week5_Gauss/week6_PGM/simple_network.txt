@@ -1,0 +1,25 @@
+# Stick to this format or perish! 
+#
+# This is the simplest graphical model I can think of.
+
+Variables: rain 2, wet 2
+ 
+# The numbers refer to number of possible states, e.g. 'rain 2' means
+# rain has two possible states, 0 and 1. (Nb. states don't get to have
+# names here, they're just integers.)
+
+Factor: RainPrior
+normalised
+# NB. 'normalised' (will be checked) vs 'unnormalised' (won't). 
+connects to: rain
+0 .5
+1 .5
+
+Factor: ProbOfWet
+normalised
+connects to: rain, wet
+# Nb. the order of vars after 'connects to' determines the order in the table
+0 0 .7
+0 1 .3
+1 0 .1
+1 1 .9
