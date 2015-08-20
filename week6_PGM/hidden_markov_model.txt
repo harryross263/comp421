@@ -1,0 +1,101 @@
+# Stick to this format or perish! 
+#
+# This is the simplest graphical model I can think of.
+
+#---------------------------------------------------------
+# H - god's mindset, either content (0) or vengeful (1).
+# W - weather, either sunny (0) or locusts (1).
+#---------------------------------------------------------
+Variables: H1 2, H2 2, H3 2, H4 2, H5 2, W1 2, W2 2, W3 2, W4 2, W5 2
+
+# We expect the stationary distribution for god's mindset to be
+# (0.75, 0.25), and the weather should be (0.65, 0.35).
+
+# CONCLUSION: it mixes! And really fast too, after 2-3 nodes.
+ 
+#-------------
+# STATE OF GOD
+#-------------
+
+Factor: GodPrior
+normalised
+connects to: H1
+0 0.9
+1 0.1
+
+Factor: H12H2
+normalised
+connects to: H1, H2
+0 0 0.9
+0 1 0.1
+1 0 0.3
+1 1 0.7
+
+Factor: H22H3
+normalised
+connects to: H2, H3
+0 0 0.9
+0 1 0.1
+1 0 0.3
+1 1 0.7
+
+Factor: H32H4
+normalised
+connects to: H3, H4
+0 0 0.9
+0 1 0.1
+1 0 0.3
+1 1 0.7
+
+Factor: H42H5
+normalised
+connects to: H4, H5
+0 0 0.9
+0 1 0.1
+1 0 0.3
+1 1 0.7
+
+#-------------------
+# STATE OF THE WORLD
+#-------------------
+
+Factor: H12W1
+normalised
+connects to: H1, W1
+0 0 0.8
+0 1 0.2
+1 0 0.2
+1 1 0.8
+
+Factor: H22W2
+normalised
+connects to: H2, W2
+0 0 0.8
+0 1 0.2
+1 0 0.2
+1 1 0.8
+
+Factor: H32W3
+normalised
+connects to: H3, W3
+0 0 0.8
+0 1 0.2
+1 0 0.2
+1 1 0.8
+
+Factor: H42W4
+normalised
+connects to: H4, W4
+0 0 0.8
+0 1 0.2
+1 0 0.2
+1 1 0.8
+
+Factor: H52W5
+normalised
+connects to: H5, W5
+0 0 0.8
+0 1 0.2
+1 0 0.2
+1 1 0.8
+
