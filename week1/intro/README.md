@@ -15,14 +15,6 @@ An outline of what we're going to do:
 || *(break)* ||
 
 
-| Week 4        | Week 5          | Week 6  |
-| ------------- | ------------- | ----- |
-| stuff here     | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-
-
 <img src="https://octodex.github.com/images/yaktocat.png" width="128">
 
 1. One
@@ -40,4 +32,29 @@ Alternatively,
 - And if you have sub points, put two spaces before the dash or star:
   - Like this
   - And this
+
+
+---
+layout: post
+title: test a matrix
+---
+
+So (I think we would agree) that matrix multiplication looks something like this.
+$$
+\begin{bmatrix}
+a & b\\
+c & d\\
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+e & f\\
+g & h\\
+\end{bmatrix}
+=
+\begin{bmatrix}
+ae+bg & af+bh\\
+ce+dg & cf+dh\\
+\end{bmatrix}
+$$
+
 
