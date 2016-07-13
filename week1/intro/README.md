@@ -33,13 +33,15 @@ Alternatively,
   - Like this
   - And this
 
-
----
-layout: post
-title: test a matrix
 ---
 
-So (I think we would agree) that matrix multiplication looks something like this.
+$$ \alpha $$
+
+---
+
+
+matrix multiplication looks something like this.
+
 $$
 \begin{bmatrix}
 a & b\\
