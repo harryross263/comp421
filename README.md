@@ -20,8 +20,6 @@ An outline of what we're going to do:
 | zebra stripes | are neat      |    $1 |
 
 
-<<<<<<< HEAD
-
  
 ### Contribute!
 
@@ -35,5 +33,4 @@ These will be the notes and resources the exams and assignments are built from. 
 
 [Week 1](https://github.com/act65/comp421/tree/master/week1)
 [Week 2](https://github.com/act65/comp421/tree/master/week2)
-=======
->>>>>>> garibaldu/master
+
