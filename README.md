@@ -1,5 +1,4 @@
-# Week 1 - introductions and straw men
-
+# Outline
 An outline of what we're going to do:
 
 | [Week 1](https://github.com/act65/comp421/tree/master/week1) : straw | [Week 2](https://github.com/act65/comp421/tree/master/week2) : distributions | Week 3 : FFNN | 
@@ -21,7 +20,7 @@ An outline of what we're going to do:
 
 
  
-### Contribute!
+# Contribute!
 
 __Pull requests__ Add some notes of what you lecture up here, scribbles/notes of related problems, add links to resources, ... ?
 
