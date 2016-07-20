@@ -1,24 +1,15 @@
 This lecture looks at a couple of important distributions used in machine learning.
 
-HOW DO I COMMENT OUT STUFF LIKE THIS?!
-
-<To read: 
-     * [[http://vuw.eblib.com/patron/FullRecord.aspx?p=1591570][Textbook]]: sections ?>
-
 # The Gaussian distribution
 
  * 1-D: mean and variance (1st two moments of distribution)
  * 2-D: mean is 2 numbers. Cov is 2x2 matrix. Examples, e.g. If Cov is/isn't diagonal.
- * n-D: Cov is nxn matrix: we need to invert. Cost is n^3.
+ * n-D: Cov is nxn matrix: we need to invert. Cost is $n^3$.
  * how do we estimate mean and covariance from a data set $ X $ ?
  * mean and covariance are "sufficient statistics" for the Gaussian distribution
 
- * [[https://github.com/garibaldu/comp421/blob/master/notebooks/Gaussian.ipynb][ipython notebook]] showing some of these aspects.
- * Also [[http://www.inf.ed.ac.uk/teaching/courses/inf2b/lectureSchedule.html][some lecture notes]] that I (Ed) found useful. Chapter 8 is on Gaussians.
-
-
-
-
+ * [ipython notebook](https://github.com/garibaldu/comp421/blob/master/notebooks/Gaussian.ipynb) showing some of these aspects.
+ * Also [http://www.inf.ed.ac.uk/teaching/courses/inf2b/lectureSchedule.html](some lecture notes that I (Ed) found useful. Chapter 8 is on Gaussians.
 
 # Categorical: the "one hot" distribution
 
@@ -33,8 +24,6 @@ HOW DO I COMMENT OUT STUFF LIKE THIS?!
 
 < only if there is time * MF: the mechanics of PCA * MF: Dirichlet is a generator of multinomials * MF: the KL divergence between two distributions >
  
- 
- 
 ***
 
 < 2nd lecture (presented by Gerard and Catherine)>
@@ -43,8 +32,6 @@ This lecture looks at a couple of the common _cost functions_ or _loss functions
 
 Sometimes the choice of what to optimize can seem rather arbitrary. A nice way to be more principled is to explicitly consider a _probabilistic model_ and then ask the learner to maximize the _log likelihood_, which is the (log of the) probability that, given the input patterns one after another, the learner would produce the same outputs as are in the training set. Here we look at a couple of examples.
 
-<To read: 
-   * wot?  [[http://vuw.eblib.com/patron/FullRecord.aspx?p=1591570][Textbook]]: sections >
 
 
 # Intro: (MF)
@@ -66,8 +53,7 @@ Sometimes the choice of what to optimize can seem rather arbitrary. A nice way t
 
 # A cost function for classification tasks: "Cross-entropy"
  * likelihood of getting data correct, under a model generating a Categorical distribution
- * for just 2 classes: log likelihood under the categorical distribution --> "cross entropy". 
-<Ex: the learning rule that results for sigmoids (and softmax more generally) >
-
+ * for just 2 classes: log likelihood under the categorical distribution --> "cross entropy".
  
+< Exercise What is the learning rule that results for sigmoids (and softmax more generally) >
  
