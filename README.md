@@ -1,29 +1,11 @@
 # Outline
 An outline of what we're going to do:
 
-| [Week 1](https://github.com/act65/comp421/tree/master/week1) | straw | people | 
-| :--- | :--- | :--- |
-| Tuesday | introductions, conversation about how to structure and assess this course | Marcus |
-| Wednesday | introductions, conversation about how to structure and assess this course | Marcus |
-| Friday | introductions, conversation about how to structure and assess this course | Marcus |
 
-| [Week 1](https://github.com/act65/comp421/tree/master/week1) straw | [Week 2](https://github.com/act65/comp421/tree/master/week2) tools | 
-| :--- | :--- |
-| Tuesday | introductions, conversation about how to structure and assess this course |
-|| Marcus || Marcus |
-| Wednesday | introductions, conversation about how to structure and assess this course |
-|| Marcus || Marcus |
-| Friday | introductions, conversation about how to structure and assess this course | 
-|| Marcus || Marcus |
-
-
-
-
-| [Week 1](https://github.com/act65/comp421/tree/master/week1) : straw | [Week 2](https://github.com/act65/comp421/tree/master/week2) : distributions | Week 3 : FFNN | 
+| [Week 1](https://github.com/act65/comp421/tree/master/week1) : straw | [Week 2](https://github.com/act65/comp421/tree/master/week2) : distributions | [Week 3](https://github.com/act65/comp421/tree/master/week3) : feed-forward NNs | 
 | :------------- | ------------- | ----- |
-| you are here      | Gaussian, multinomial, softmax, sigmoid | polynomials (Bishop) |
-| k-NN, perceptron, PCA, k-means | losses and likelihoods | RBFs |
-| the curse | *(no lecture)*| MLPs |
+| introduction | Gaussian, multinomial, softmax, sigmoid | polynomials (Bishop) |
+| k-NN, Perceptron, PCA, k-means, the curse | losses and likelihoods | RBFs | | the curse | *(no lecture)*| MLPs |
 | | | |
 | **Week 4** |  **Week 5** |  **Week 6** | 
 | **Week 4** |  **Week 5** |  **Week 6** | 
