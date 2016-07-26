@@ -3,9 +3,9 @@
 First lecture was an introduction to what we're going to cover, and how we could assess it.
 
 
-< (presented by Harry and Luke) >
+< presented by Harry and Luke >
 
-Some "straw man" machine learning algorithms (very simple, but not very good in general).
+Some "straw man" machine learning algorithms (ie. very simple, but not very good in general).
 
 Talking points:
 
@@ -51,13 +51,13 @@ Noted: both k-means and PCA make "cartoon" / reduced forms of the original data.
 
 ---
 
-< (presented by Marcus) >
+< presented by Marcus >
 
 This lecture picks up our last "straw man", namely the humble Perceptron.
 
 To read: 
- * [[http://vuw.eblib.com/patron/FullRecord.aspx?p=1591570][Textbook]]: sections 2.1 and 2.2
- * [[http://vuw.eblib.com/patron/FullRecord.aspx?p=1591570][Textbook]]: all of chapter 3, except for 3.4.1. (The later parts of the chapter are useful if you're unfamiliar with python - there is also a section in an appendix).
+ * [Textbook](http://vuw.eblib.com/patron/FullRecord.aspx?p=1591570][Textbook) : sections 2.1 and 2.2
+ * [Textbook](http://vuw.eblib.com/patron/FullRecord.aspx?p=1591570][Textbook): all of chapter 3, except for 3.4.1. (The later parts of the chapter are useful if you're unfamiliar with python - there is also a section in an appendix).
 
 
  * data is a big matrix of inputs X mapping (in "supervised learning" at least) to a matrix of "targets" Y
@@ -72,7 +72,7 @@ To read:
  * perceptron's decision surface (where output changes) is a hyperplane, perpendicular to the weights vector
  * "learning" is movement of that hyperplane, in effect
  * Perceptron Learning Rule (often called the "delta rule") - guaranteed to find a separating hyperplane, if one exists
- * There's an [[https://github.com/garibaldu/comp421/blob/master/notebooks/super-simple-Perceptron.ipynb][ipython notebook]] showing some of these aspects - download and run the last cell several times (from its random initial weight values) to see the effect of learning the weights on the hyperplane dividing the space.
+ * There's an [ipython notebook](https://github.com/garibaldu/comp421/blob/master/notebooks/super-simple-Perceptron.ipynb) showing some of these aspects - download and run the last cell several times (from its random initial weight values) to see the effect of learning the weights on the hyperplane dividing the space.
  * XOR: a simple problem where separating hyperplane doesn't exist
 
 # The Curse of Dimensionality
@@ -87,8 +87,8 @@ In high dimensional spaces:
 
 We've met 4 straw-man machine learning algorithms lately:
 
-|                             | *supervised* | *unsupervised* |
-| *non-parametric* | kNN     | k means |
-| *parametric*        | perceptron     | PCA |
+| _                | *supervised* | *unsupervised* |
+| *non-parametric* | kNN            | k means |
+| *parametric*     | perceptron     | PCA     |
  
 (look up parametric versus non-parametric).
