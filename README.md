@@ -4,7 +4,7 @@
 | :------------- | ------------- | ----- |
 | introduction | Gaussian, multinomial, softmax, sigmoid | polynomials (Bishop) |
 | k-NN, Perceptron, PCA, k-means, the curse | losses and likelihoods | RBFs | 
-| the curse | *(no lecture)*| MLPs |
+| the curse | (no lecture)| MLPs |
 | | | |
 | **[Week 4](https://github.com/garibaldu/comp421/tree/master/week4)** : labs | **[Week 5](https://github.com/garibaldu/comp421/tree/master/week5)** : deep papers | **[Week 6](https://github.com/garibaldu/comp421/tree/master/week6)** : recurrent NNs | 
 | basics lab               | papers 1 | basic recurrent NNs | 
@@ -12,7 +12,7 @@
 | autograd/TF lab          | papers 3 | Q & A | 
 |  | | | 
 || *(break)* ||
-| **[Week 7](https://github.com/garibaldu/comp421/tree/master/week7)** : Bayes | **[Week 8](https://github.com/garibaldu/comp421/tree/master/week8)** : directed PGMs | **[Week 9](https://github.com/garibaldu/comp421/tree/master/week9)** : inference over time | 
+| **[Week 7](https://github.com/garibaldu/comp421/tree/master/week7) : Bayes** | **[Week 8](https://github.com/garibaldu/comp421/tree/master/week8)** : directed PGMs | **[Week 9](https://github.com/garibaldu/comp421/tree/master/week9)** : inference over time | 
 | language of inference | belief nets               | eg: HMMs | 
 | Bayesian predictions  | sum-product, max-sum      | Kalman filters, particle filters | 
 | Gaussian processes    | eg: mixtures of Gaussians | Q & A | 
