@@ -1,0 +1,253 @@
+\input{../421head.tex}
+
+
+%  THIS WAS FROM 2014T1 ORIGINALLY - Pics can be found there.....
+
+\begin{document}
+
+\frame{\frametitle{COMP421 Machine Learning}
+{\Huge curve-fitting with polynomials...}
+
+}
+
+\section{curve fitting}
+
+
+% \frame{\frametitle{}
+
+% {\small This is essentially a canter through Bishop's Chapter 1}.
+
+% \includegraphics[width=0.7\textwidth]{./pics/Figure1_1}
+
+% \begin{itemize}
+%   \item hand-crafted solutions don't work... There's too much
+%   variability in how people write numbers.
+
+%   \item training set (e.g. zipcode data), of pairs: $\{x_n, t_n \}$
+%   with $n=1\ldots N$.
+
+%   \item if a system works on the training set, we might hope to see
+%   generalisation, on a test set
+
+%   \item usually some sort of pre-processing (e.g. placement of the
+%     image). Lowers some of the variability within each digit
+%     class. {\it a.k.a.} ``feature extraction''.
+% \end{itemize}
+
+% }
+
+% \frame{\frametitle{}
+% For example, consider data that comes from a sinusoid plus
+% Gaussian noise. \\
+% \begin{columns}
+%   \column{.6\textwidth}
+%   \begin{block}{}
+%     \includegraphics[width=0.99\textwidth]{./pics/Figure1_2}
+%     \end{block}
+%   \column{.4\textwidth}
+%   \begin{block}{}
+% Fit with a polynomial up to order $M$:
+% \[
+% y(x,w) = \sum_{j=0}^M w_j x^j
+% \]
+% which is linear in the parameters, $w$.
+%     \end{block}
+%   \end{columns}
+
+% }
+
+
+\frame{\frametitle{curve}
+Consider data that comes from a sinusoid plus
+Gaussian noise. 
+
+\begin{center}
+  \includegraphics[width=0.48\textwidth]{./pics/Figure1_2}
+  \includegraphics[width=0.48\textwidth]{./pics/Figure1_3}
+\end{center}
+}
+
+
+\frame{\frametitle{recap...} %data set $\data$ consisting of $\{(\bx_n,t_n )_{n\in 1:N} \}$}
+  \begin{columns}
+    \column{.15\textwidth}
+    \begin{block}{}
+      \includegraphics[width=.99\textwidth]{./pics/Figure1_3}
+    \end{block}
+    \column{.85\textwidth}
+  Assuming Gaussian noise,
+  \begin{align*}
+\underbrace{P(Y=T | X, w)}_{\text{Likelihood}} &= \prod_n^N P( y(\bx_n,w)= t_n) \\
+    & \propto \prod_n^N \exp{\bigg[ -\frac{1}{2} \big(y(\bx_n,w) - t_n \big)^2 \bigg]} 
+  \end{align*}
+  \end{columns}
+  \begin{align*}
+    \mathcal{L} &= \log P(Y=T | X, w)\\ 
+    &= \frac{1}{2} \sum_{n=1}^N \bigg( y(\bx_n,w) - t_n \bigg)^2
+  \end{align*}
+  
+  
+  So calculating the Max Likelihood solution amounts to minimizing the
+  sum of squared errors on a training set of $N$ pairs.
+}
+
+
+\frame{\frametitle{we need a form for $y$: how about a polynomial?}
+  \begin{align*}
+    y(x,w) &= \sum_{j=0}^M w_j \, x^j 
+  \end{align*}
+
+  Examples...
+
+  \vspace{2cm}
+  surprising factoid: for $y(x_n,w)$ a polynomial, the optimal values for $w$ can be found
+  in closed form (out of scope...). This won't usually be true!  
+
+}
+
+
+
+\section{the need for complexity control}
+
+\frame{\frametitle{}
+
+Consider a training set with $N=10$ pairs in it.\\
+Best-fit curves for various values of $M$:
+\begin{tabular}{cc}
+\includegraphics[width=0.4\textwidth]{./pics/Figure1_4a}&
+\includegraphics[width=0.4\textwidth]{./pics/Figure1_4b}\\
+\includegraphics[width=0.4\textwidth]{./pics/Figure1_4c}&
+\includegraphics[width=0.4\textwidth]{./pics/Figure1_4d}
+\end{tabular}
+\\
+Model selection problem: which $M$ to use?
+}
+
+
+\frame{\frametitle{hold-out strategies for complexity control}
+  \vspace{-1.5em}
+  \begin{columns}
+    \column{.5\textwidth}
+    \begin{block}{}
+      {\emph test set}:\\
+      (Note both under-fitting and over-fitting)\\
+      \includegraphics[width=\textwidth]{./pics/Figure1_5} 
+
+      But this ``hold out'' set wastes data.
+    \end{block}
+    \column{.5\textwidth}
+    \begin{block}{}
+      {\emph cross-validation}:\\
+      \begin{center}
+        \includegraphics[width=0.9\textwidth]{./pics/Figure1_18}
+      \end{center}
+      (extreme case is ``leave-one-out'')
+      \begin{itemize} 
+      \item have to re-train lots of times
+      \item multiple control parameters $\longrightarrow$ many
+        combinations to be tried out.
+      \end{itemize}
+    \end{block}
+  \end{columns}
+}
+
+
+\frame{\frametitle{}
+More data always helps: (here $M=9$ but $N$ goes 10, 15, 100)\\
+\includegraphics[width=0.4\textwidth]{./pics/Figure1_4d}
+\includegraphics[width=0.4\textwidth]{./pics/Figure1_6a}\\
+\includegraphics[width=0.4\textwidth]{./pics/Figure1_6b}
+
+
+Notice: we're deciding $M$ differently when there's more / less data.
+What do we think of this?
+
+}
+
+\frame{\frametitle{an alternative ``knob'' controlling complexity}
+Nb: the best-fit parameters $w$ get bigger for the high-$M$ models.
+So how about using a big $M$ but penalize big $w$? \\We could have a new
+cost function:
+\[
+E(w) = \frac{1}{2} \sum_{n=1}^N \{y(x_n,w) - t_n \}^2 \;\;
++ \; \frac{\lambda}{2} ||w||^2
+\]
+In classical stats, this is called ``regularisation'', ``shrinkage'', ...
+%but notice {\bf it's just MAP with a Gaussian prior on the parameters $w$}. \\ {\it Ex: convince yourself of this}.
+
+Now $\lambda$ controls the model complexity, instead of $M$. \\We {\it still}
+have a model selection problem, requiring cross-validation: what should $\lambda$ be? (Here, $M=9$ in all cases)
+
+\begin{tabular}{ccc}
+\includegraphics[width=0.33\textwidth]{./pics/Figure1_4d}&
+\includegraphics[width=0.33\textwidth]{./pics/Figure1_7a}&
+\includegraphics[width=0.33\textwidth]{./pics/Figure1_7b} 
+\\
+$\lambda=0$ & $\lambda=e^{-18}$ & $\lambda=1$
+\end{tabular}
+}
+
+
+
+\frame{\frametitle{pros and cons of the polynomial family}
+    \begin{center}
+    \includegraphics[width=.5\textwidth]{pics/Figure1_6a}
+    \end{center}
+
+    \begin{tabular}{l p{.9\textwidth}}
+    \tick & arbitrarily powerful models (as $M \rightarrow \infty$)\\
+    \tick & solution for the weightings is analytic.\\ \hline \\
+    \cross & fairly weird functional family...\\
+%    \cross & complexity control is always an issue (over/under-fitting).\\
+    \cross & what's the connection with classification? ({\it eg.} the digits)\\
+    \cross & what if input is a vector?! $\mat{x} = (x_1, x_2, \ldots,
+      x_K)$. The Curse.
+    \end{tabular}
+  
+}
+
+
+\section{the curse of dimensionality}
+
+\frame{\frametitle{the curse of dimensionality} 
+\vspace{.8em} 
+The volume of space grows rapidly with its dimensionality. You need
+more parameters to specify the behaviour, and more data points to
+constrain all those parameters.
+
+\begin{tabular}{lcr}
+\includegraphics[width=0.2\textwidth]{./pics/Figure1_21a}&
+\includegraphics[width=0.25\textwidth]{./pics/Figure1_21b}&
+\includegraphics[width=0.3\textwidth]{./pics/Figure1_21c}
+\end{tabular}
+
+}
+
+% \frame{\frametitle{another view of the curse} 
+
+% \begin{center}
+% \begin{tabular}{|l|c|c|}
+% \hline
+%     & volume of hypersphere & volume of hypercube \\ 
+% $N$ & with radius 1 (diameter 2) & with side-lengths 2 \\ 
+% \hline
+% $2$ & $\pi$ & ${\displaystyle 2^2}$ \\
+% $3$ & $\frac{4}{3}\pi$ & ${\displaystyle 2^3}$ \\
+% $4$ & $\pi^2 / 2$ & ${\displaystyle 2^4}$ \\
+% $5$ & $8\pi^2 / 15$ & ${\displaystyle 2^5}$ \\
+% $n$ & ${\displaystyle \approx \pi^{n/2} }$ & ${\displaystyle 2^n}$ \\
+% \hline
+% \end{tabular}
+% \end{center}
+
+% {\it Eg.} think about how to easily generate points uniformly
+% distributed within a sphere. One method is to generate points
+% uniformly in the cube, {\emph and throw away those points that lie
+%   outside the sphere}. Consider how well this algorithm scales up to
+% higher dimensions.
+
+% }
+
+
+\end{document}
+
