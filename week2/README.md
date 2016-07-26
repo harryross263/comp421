@@ -35,14 +35,14 @@ Sometimes the choice of what to optimize can seem rather arbitrary. A nice way t
 
 
 
-# Intro: (MF)
+## Intro: (MF)
  * X --> T in the training set, but X --> Y (prediction) under a model having parameters w. We want Y to match T...
  * One way to view this: think of Y as specifying a _probability distribution_ and ask "What is the likelihood of generating T exactly, under this distribution?"
   * The Aim of learning could be to maximize that likelihood.
   * under the "i.i.d. assumption" the likelihood is a _product_ over training items so the log likelihood of the training data is a sum over training items
 
 
-# A cost function for regression tasks: the sum of squared errors
+## A cost function for regression tasks: the sum of squared errors
 
    * what that is
    * minimizing it in the case of a linear model, using gradient descent ---> "the delta rule" 
@@ -52,7 +52,7 @@ Sometimes the choice of what to optimize can seem rather arbitrary. A nice way t
 (we leave the topic of regularisation - penalising "complexity", e.g. "weight decay" - to the next week).
 
 
-# A cost function for classification tasks: "Cross-entropy"
+## A cost function for classification tasks: "Cross-entropy"
  * likelihood of getting data correct, under a model generating a Categorical distribution
  * for just 2 classes: log likelihood under the categorical distribution --> "cross entropy".
  
