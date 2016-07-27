@@ -3,12 +3,12 @@
 | [Week 1](https://github.com/garibaldu/comp421/tree/master/week1) : straw | [Week 2](https://github.com/garibaldu/comp421/tree/master/week2) : distributions | [Week 3](https://github.com/garibaldu/comp421/tree/master/week3) : feed-forward NNs | 
 | :------------- | ------------- | ----- |
 | introduction | Gaussian, multinomial, softmax, sigmoid | polynomials (Bishop) |
-| k-NN, Perceptron, PCA, k-means, the curse | losses and likelihoods | RBFs | 
-| the curse | (no lecture)| MLPs |
+| k-NN, Perceptron, PCA, k-means, the curse | losses and likelihoods | Backprop | 
+| the curse | (no lecture)| basics lab |
 | | | |
 | **[Week 4](https://github.com/garibaldu/comp421/tree/master/week4) : labs** | **[Week 5](https://github.com/garibaldu/comp421/tree/master/week5) : deep papers** | **[Week 6](https://github.com/garibaldu/comp421/tree/master/week6) : recurrent NNs** | 
-| basics lab               | papers 1 | basic recurrent NNs | 
-| dropout and other tricks | papers 2 | adv. recurrent NNs | 
+| dropout and other tricks | papers 1 | basic recurrent NNs | 
+| convnets                 | papers 2 | adv. recurrent NNs | 
 | autograd/TF lab          | papers 3 | Q & A | 
 |  | | | 
 || *(break)* ||
