@@ -1,7 +1,7 @@
 # Outline
 
 | [Week 1](https://github.com/garibaldu/comp421/tree/master/week1) : straw | [Week 2](https://github.com/garibaldu/comp421/tree/master/week2) : distributions | [Week 3](https://github.com/garibaldu/comp421/tree/master/week3) : feed-forward NNs | 
-| :------------- | ------------- | ----- |
+| :------------- | :------------ | :----- |
 | introduction | Gaussian, multinomial, softmax, sigmoid | polynomials (Bishop) |
 | k-NN, Perceptron, PCA, k-means, the curse | losses and likelihoods | Backprop | 
 | the curse | (no lecture)| basics lab |
