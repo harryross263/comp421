@@ -17,7 +17,9 @@ See also [link he suggested](whatwasitagain?)
 
 ***
 
-A basic hands-on session : if you have a laptop, bring it.
+# A basic hands-on session 
+
+if you have a laptop, bring it.
 
 Aims:
 
