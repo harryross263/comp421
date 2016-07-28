@@ -12,10 +12,17 @@ Today's lecture is a tour of the [first section]() of Chris Bishop's fantastic b
 # Back-propagation in neural networks
 < 2nd lecture (presented by Jack) >
 
+See also [link he suggested](whatwasitagain?)
 
 
 ***
 
-# Radial basis function networks
-< 3rd lecture (presented by ??? and ???) >
+A basic hands-on session : if you have a laptop, bring it.
 
+Aims:
+
+ * get ipython/jupyter notebook going, and scikit-learn, and numpy, and matplotlib - the simplest way is via [anaconda](https://www.continuum.io/downloads) which (we think) has everything in place.
+ * if you get that far, but not everyone has yet please help someone else!
+ * interact with the [comp421 repository on github](https://github.com/garibaldu/comp421) - even if you never push back, you should pull it regularly.
+ * if you get that far, but not everyone has yet please help someone else!
+ * from the [notebooks](https://github.com/garibaldu/comp421/tree/master/notebooks) directory invoke _ipython notebook_ and step through the notebooks on "knn on little digits", and "marcus play backprop"
