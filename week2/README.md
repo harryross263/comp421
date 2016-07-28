@@ -5,8 +5,8 @@ This lecture looks at a couple of important distributions used in machine learni
 
  * 1-D: mean and variance (1st two moments of distribution)
  * 2-D: mean is 2 numbers. Cov is 2x2 matrix. Examples, e.g. If Cov is/isn't diagonal.
- * n-D: Cov is nxn matrix: we need to invert. Cost is $n^3$.
- * how do we estimate mean and covariance from a data set $ X $ ?
+ * n-D: Cov is nxn matrix: we need to invert. Cost is $$n^3$$.
+ * how do we estimate mean and covariance from a data set $$ X $$ ?
  * mean and covariance are "sufficient statistics" for the Gaussian distribution
 
  * [ipython notebook](https://github.com/garibaldu/comp421/blob/master/notebooks/Gaussian.ipynb) showing some of these aspects.
@@ -17,7 +17,7 @@ This lecture looks at a couple of important distributions used in machine learni
  * what's a Bernoulli?
  * so what's a Categorical? - point on simplex (what's that?)
  * [Aside: the Bernoulli is to the Binomial as Categorical is to Multinomial : second is distribution over _counts taken from the first_ ]
- * the softmax parameterisation of the categorical: $ p_i = \frac{e^{\phi_i}}{\sum_k e^{\phi_k}} $
+ * the softmax parameterisation of the categorical: $$ p_i = \frac{e^{\phi_i}}{\sum_k e^{\phi_k}} $$
  * softmax avoids restricting the parameters to [0,1] and having to "stay on the simplex"
  * so we can construct a "softmax layer" whose output is a Categorical distribution. It will be handy later...
  * notice: invariant to adding a constant to all the %$ \phi $% (so long as it's the same constant).
