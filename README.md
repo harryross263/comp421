@@ -7,9 +7,9 @@
 | the curse | (no lecture)| basics lab |
 | | | |
 | **[Week 4](https://github.com/garibaldu/comp421/tree/master/week4) : labs** | **[Week 5](https://github.com/garibaldu/comp421/tree/master/week5) : deep papers** | **[Week 6](https://github.com/garibaldu/comp421/tree/master/week6) : recurrent NNs** | 
-| dropout and other tricks | papers 1 | basic recurrent NNs | 
-| convnets                 | papers 2 | adv. recurrent NNs | 
-| autograd/TF lab          | papers 3 | Q & A | 
+| convnets; varieties of SGD | papers 2 | basic recurrent NNs | 
+| weight decay; dropout  | papers 3 | adv. recurrent NNs | 
+| papers 1  | papers 4 | Q & A | 
 |  | | | 
 || *(break)* ||
 | **[Week 7](https://github.com/garibaldu/comp421/tree/master/week7) : Bayes** | **[Week 8](https://github.com/garibaldu/comp421/tree/master/week8) : directed PGMs** | **[Week 9](https://github.com/garibaldu/comp421/tree/master/week9) : inference over time** | 
