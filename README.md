@@ -6,7 +6,7 @@
 | k-NN, Perceptron, PCA, k-means, the curse | losses and likelihoods | Backprop | 
 | the curse | (no lecture)| basics lab |
 | | | |
-| **[Week 4](https://github.com/garibaldu/comp421/tree/master/week4) : labs** | **[Week 5](https://github.com/garibaldu/comp421/tree/master/week5) : deep papers** | **[Week 6](https://github.com/garibaldu/comp421/tree/master/week6) : recurrent NNs** | 
+| **[Week 4](https://github.com/garibaldu/comp421/tree/master/week4) : more FFNN** | **[Week 5](https://github.com/garibaldu/comp421/tree/master/week5) : deep papers** | **[Week 6](https://github.com/garibaldu/comp421/tree/master/week6) : recurrent NNs** | 
 | convnets; varieties of SGD | papers 2 | basic recurrent NNs | 
 | weight decay; dropout  | papers 3 | adv. recurrent NNs | 
 | papers 1  | papers 4 | Q & A | 
