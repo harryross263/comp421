@@ -43,6 +43,7 @@ Some useful links
 `(Friday: who and who?)`
 
 * [Alex net](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
-> ImageNet Classification with Deep Convolutional Neural Networks
-> Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton
-> Published 2012 in NIPS, and already cited 6000 times
+
+ > ImageNet Classification with Deep Convolutional Neural Networks
+ > Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton
+ > Published 2012 in NIPS, and already cited 6000 times
