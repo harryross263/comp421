@@ -2,7 +2,7 @@
 
 
 # Convnets
-(Tuesday, Alex)
+`(Tuesday, Alex)`
 
 * Invariance and weight tying
 * What is a convolution?
@@ -15,15 +15,15 @@
 * [Nice explanation and pretty pics](http://colah.github.io/posts/2014-07-Conv-Nets-Modular/)
 
 
-# Varieties of SGD (stochastic gradient descent) (Wednesday) 
-(Tuesday, lead by who?)
+# Varieties of SGD (stochastic gradient descent) 
+`(Tuesday, lead by who?)`
 
 Some useful links
 * [Gradient descent update rules](http://sebastianruder.com/optimizing-gradient-descent/)
 
 
 # Weight decay
-(Wednesday, lead by who?)
+`(Wednesday, lead by who?)`
 
 * what it is, in the learning algorithm
 * perhaps: example of it working (d.i.y. on an existing notebook? Or get picture from Bishop - see Marcus on Tuesday)
@@ -32,7 +32,7 @@ Some useful links
 * sparsity
 
 # Dropout
-(Wednesday, lead by who?)
+`(Wednesday, lead by who?)`
 
 * what it is; the intuition
 * example of it working (see the first paper on it - Hinton..)
@@ -40,7 +40,7 @@ Some useful links
 
 
 # Review and Discussion of a research paper
-(Friday: who and who?)
+`(Friday: who and who?)`
 
 * [Alex net](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
 > ImageNet Classification with Deep Convolutional Neural Networks
