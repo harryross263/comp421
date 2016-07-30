@@ -1,9 +1,13 @@
+This week we look at more of the lore of feed-forward neural nets (FFNN) - from vanilla back-prop to 'deep nets'.
 
 
+# ReLUs versus sigmoids
+`(Tuesday, Marcus - I will be brief)`
+* the vanishing gradients issue
+* ReLUs, and their gradients
 
 # Convnets
 `(Tuesday, Alex)`
-
 * Invariance and weight tying
 * What is a convolution?
 * Implementation details: Padding and strides
