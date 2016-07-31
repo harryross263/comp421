@@ -36,7 +36,7 @@ Some useful links
 * sparsity
 
 # Dropout
-`(Wednesday, lead by who?)`
+`(Wednesday, lead by Kelsey)`
 
 * what it is; the intuition
 * example of it working (see the first paper on it - Hinton..)
@@ -44,7 +44,7 @@ Some useful links
 
 
 # Review and Discussion of a research paper
-`(Friday: who and who?)`
+`(Friday: lead by Scott and who?)`
 
 * [Alex net](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
 
