@@ -20,14 +20,14 @@ This week we look at more of the lore of feed-forward neural nets (FFNN) - from 
 
 
 # Varieties of SGD (stochastic gradient descent) 
-`(Tuesday, lead by who?)`
+`(Tuesday, lead by Davis)`
 
 Some useful links
 * [Gradient descent update rules](http://sebastianruder.com/optimizing-gradient-descent/)
 
 
 # Weight decay
-`(Wednesday, lead by who?)`
+`(Wednesday, lead by Ben)`
 
 * what it is, in the learning algorithm
 * perhaps: example of it working (d.i.y. on an existing notebook? Or get picture from Bishop - see Marcus on Tuesday)
