@@ -44,7 +44,7 @@ Some useful links
 
 
 # Review and Discussion of a research paper
-`(Friday: lead by Scott and who?)`
+`(Friday: lead by Scott and who?)  (also: Luke E and Max volunteered - second paper? t.b.d.)`
 
 * [Alex net](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
 
