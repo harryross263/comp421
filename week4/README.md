@@ -29,11 +29,17 @@ Some useful links
 # Weight decay
 `(Wednesday, lead by Ben)`
 
-* what it is, in the learning algorithm
-* perhaps: example of it working (d.i.y. on an existing notebook? Or get picture from Bishop - see Marcus on Tuesday)
-* what cost it minimizes, why this amounts to regularisation / complexity control (small weights = smooth functions)
-* that's for the L2 norm of W (the sum of weights squared) - what about using the L1 norm instead?
-* sparsity
+* the point: over-fitting, i.e. Defending against the arbitrariness of initialisation of W.
+* idea: complexity control = penalties added to the loss function = *regularisation*
+* the penalties could be on the weights values, e.g. prefer "smaller" weights
+* Final weights will be a compromise between getting data right and keeping weights small. (Aside: in a net with sigmoid hiddens, small weights means smooth functions).
+* specifically: the 2-norm leads (via gradient-following) to "weight decay". 
+* how to set the amount of decay?
+* what about the 1-norm instead? (leads to sparsity: often desirable).
+* Nb. possible 2nd point to this: regularisation can improve convergence (perhaps by removing local optima).
+
+
+
 
 # Dropout
 `(Wednesday, lead by Kelsey)`
