@@ -43,7 +43,7 @@ Discussion based on this nice summary: [Gradient descent update rules](http://se
 * how to set the amount of decay?
 * what about the 1-norm instead? (leads to sparsity: often desirable).
 * Nb. possible 2nd point to this: regularisation can improve convergence (perhaps by removing local optima).
-
+* For information on how weight decay compares to droupout and standard NNs see [here] (http://scholarworks.uark.edu/cgi/viewcontent.cgi?article=1028&context=csceuht), graphs are near the bottom.
 
 
 # Dropout
