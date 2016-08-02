@@ -48,7 +48,7 @@ Discussion based on this nice summary: [Gradient descent update rules](http://se
 
 # Dropout
 `(Wednesday, lead by Kelsey)`
-
+* [Here] (https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) is the paper we used in class.
 * what it is; the intuition
 * example of it working (see the first paper on it - Hinton..)
 * in what sense it amounts to a kind of "regularisation"
