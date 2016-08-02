@@ -6,6 +6,7 @@ This week we look at more of the lore of feed-forward neural nets (FFNN) - from 
 * Invariance and weight tying
 * What is a convolution?
 * Implementation details: Padding and strides
+* max pooling
 
 ### Resources:
 
@@ -17,9 +18,12 @@ This week we look at more of the lore of feed-forward neural nets (FFNN) - from 
 # Varieties of SGD (stochastic gradient descent) 
 `(Tuesday, lead by Davis)`
 
-Some useful links
-* [Gradient descent update rules](http://sebastianruder.com/optimizing-gradient-descent/)
+Discussion based on this nice summary: [Gradient descent update rules](http://sebastianruder.com/optimizing-gradient-descent/)
 
+* momentum
+* Nesterov (momentum)
+* adagrad and adadelta...  --> adam
+* batch normalisation (not covered, but another good hack)
 
 
 # ReLUs versus sigmoids
