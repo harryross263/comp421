@@ -1,11 +1,6 @@
 This week we look at more of the lore of feed-forward neural nets (FFNN) - from vanilla back-prop to 'deep nets'.
 
 
-# ReLUs versus sigmoids
-`(Tuesday, Marcus - I will be brief)`
-* the vanishing gradients issue
-* ReLUs, and their gradients
-
 # Convnets
 `(Tuesday, Alex)`
 * Invariance and weight tying
@@ -26,6 +21,13 @@ Some useful links
 * [Gradient descent update rules](http://sebastianruder.com/optimizing-gradient-descent/)
 
 
+
+# ReLUs versus sigmoids
+`(Wednesday, Marcus - I will be brief)`
+* the vanishing gradients issue
+* ReLUs, and their gradients
+
+
 # Weight decay
 `(Wednesday, lead by Ben)`
 
@@ -40,13 +42,13 @@ Some useful links
 
 
 
-
 # Dropout
 `(Wednesday, lead by Kelsey)`
 
 * what it is; the intuition
 * example of it working (see the first paper on it - Hinton..)
 * in what sense it amounts to a kind of "regularisation"
+
 
 
 # Review and Discussion of a research paper
