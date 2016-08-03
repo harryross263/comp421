@@ -1,7 +1,7 @@
 POSSIBLES:
 
 * [GoogLeNet / inception](http://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf)
-*
+* see this [thread](https://github.com/garibaldu/comp421/issues/10)
 *
 
 
