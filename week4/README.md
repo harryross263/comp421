@@ -56,10 +56,15 @@ Discussion based on this nice summary: [Gradient descent update rules](http://se
 
 
 # Review and Discussion of a research paper
-`(Friday: lead by Scott and who?)  (also: Luke E and Max volunteered - second paper? t.b.d.)`
+`(Friday: lead by Luke E and Max)`
 
 * [Alex net](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
 
  > ImageNet Classification with Deep Convolutional Neural Networks
  > Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton
  > Published 2012 in NIPS, and already cited 6000 times
+
+Possibly useful:
+* [in-browser demo](http://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html)
+* [examples contemporary pics in the press](https://twitter.com/interesting_jpg)
+* [more recent winner of ImageNet challenge](https://research.googleblog.com/2014/09/building-deeper-understanding-of-images.html)
