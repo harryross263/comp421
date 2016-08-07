@@ -84,8 +84,9 @@ In high dimensional spaces:
 
 We've met 4 straw-man machine learning algorithms lately:
 
-| _                | *supervised* | *unsupervised* |
-| *non-parametric* | kNN            | k means |
-| *parametric*     | perceptron     | PCA     |
+| - | supervised | unsupervised |
+| :------------- | :------------ | :----- |
+| non-parametric | kNN            | k means |
+| parametric     | perceptron     | PCA     |
  
 (look up parametric versus non-parametric).
