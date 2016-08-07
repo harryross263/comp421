@@ -1,17 +1,17 @@
 # Week 1 - introductions and straw men
 
-# First lecture 
+## First lecture 
 `(Marcus)`
 was an introduction to what we're going to cover, and how we could assess it.
 
 
-# Second lecture
+## Second lecture
 `(presented by Harry and Luke)`
 Some "straw man" machine learning algorithms (ie. very simple, but not very good in general).
 
 Talking points:
 
-## kNN
+### kNN
  * the simplest classifier you can imagine
  * Nearest neighbours, e.g. k=1
  * no "learning" at all, but could pre-cook the stored data in order to make access faster
@@ -24,7 +24,7 @@ Talking points:
     * need to keep ALL the data around in memory
     * new item seems to need to be compared to all the previous data (but may be able to reduce somewhat with smarts)
 
-## k-means
+### k-means
  * a clustering algorithm
  * we ran it on the blackboards...
  * something sensible is being minimized - what is it?
@@ -32,7 +32,7 @@ Talking points:
  * local optima are possible, and a threat
  * reduces data to a "cartoon" form of 1-of-k index
 
-## PCA
+### PCA
  * an algorithm for "dimensionality reduction"
  * 2-d cloud example
  * 3-d chair example (!)
@@ -42,12 +42,12 @@ Talking points:
  * [[https://github.com/garibaldu/comp421/blob/master/notebooks/Simple_PCA_example.ipynb][ipython notebook]] showing some basic PCA in action.
 Noted: both k-means and PCA make "cartoon" / reduced forms of the original data.
 
-## TODO: 
+### TODO: 
  * note kNN and k-means are _non-parametric_, whereas perceptron and PCA are _parametric_
  * _using_ a non-parametric method may be costly, whereas _learning_ a parametric method may be costly.
 
 ---
-# Third lecture
+## Third lecture
 `(presented by Marcus)`
 
 This lecture picks up our last "straw man", namely the humble Perceptron.
@@ -61,7 +61,7 @@ To read:
  * we try to learn a mapping that takes X to Y
  * this is done in the expectation that a good mapping will yield a sensible result y when given a novel x.
 
-## Perceptrons
+### Perceptrons
 
  * the most basic of parameterized models for the mapping X --> Y
  * weighted sum followed by thresholding operation
@@ -72,7 +72,7 @@ To read:
  * There's an [ipython notebook](https://github.com/garibaldu/comp421/blob/master/notebooks/super-simple-Perceptron.ipynb) showing some of these aspects - download and run the last cell several times (from its random initial weight values) to see the effect of learning the weights on the hyperplane dividing the space.
  * XOR: a simple problem where separating hyperplane doesn't exist
 
-## The Curse of Dimensionality
+### The Curse of Dimensionality
 
 In high dimensional spaces:
  * relative volume of hypersphere vs hypercube is miniscule: almost all the volume is "in the corners"
