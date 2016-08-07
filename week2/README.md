@@ -2,6 +2,7 @@
 This lecture looks at a couple of important distributions used in machine learning.
 
 ## The Gaussian distribution
+`(presented by who?!)`
 
  * 1-D: mean and variance (1st two moments of distribution)
  * 2-D: mean is 2 numbers. Cov is 2x2 matrix. Examples, e.g. If Cov is/isn't diagonal.
@@ -13,6 +14,8 @@ This lecture looks at a couple of important distributions used in machine learni
  * Also [http://www.inf.ed.ac.uk/teaching/courses/inf2b/lectureSchedule.html](some lecture notes that I (Ed) found useful. Chapter 8 is on Gaussians.
 
 ## Categorical: the "one hot" distribution
+`(presented by who?!)`
+
 
  * what's a Bernoulli?
  * so what's a Categorical? - point on simplex (what's that?)
@@ -27,13 +30,11 @@ This lecture looks at a couple of important distributions used in machine learni
  
 ***
 # Second lecture
-< presented by Gerard and Catherine >
+`(presented by Gerard and Catherine)`
 
 This lecture looks at a couple of the common _cost functions_ or _loss functions_ used in machine learning: these are functions which the process of _learning_ seeks to _optimize_ (either minimize or maximize).
 
 Sometimes the choice of what to optimize can seem rather arbitrary. A nice way to be more principled is to explicitly consider a _probabilistic model_ and then ask the learner to maximize the _log likelihood_, which is the (log of the) probability that, given the input patterns one after another, the learner would produce the same outputs as are in the training set. Here we look at a couple of examples.
-
-
 
 ## Intro: (MF)
  * X --> T in the training set, but X --> Y (prediction) under a model having parameters w. We want Y to match T...
