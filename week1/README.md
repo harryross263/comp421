@@ -1,11 +1,12 @@
 # Week 1 - introductions and straw men
 
 # First lecture 
+`(Marcus)`
 was an introduction to what we're going to cover, and how we could assess it.
 
 
 # Second lecture
-< presented by Harry and Luke >
+`(presented by Harry and Luke)`
 Some "straw man" machine learning algorithms (ie. very simple, but not very good in general).
 
 Talking points:
@@ -22,11 +23,6 @@ Talking points:
     * arbitrariness of the distance metric we use
     * need to keep ALL the data around in memory
     * new item seems to need to be compared to all the previous data (but may be able to reduce somewhat with smarts)
-  
-## Perceptron
- * another very simple classifier
- * postponed until the next lecture - short of time
-
 
 ## k-means
  * a clustering algorithm
@@ -52,7 +48,7 @@ Noted: both k-means and PCA make "cartoon" / reduced forms of the original data.
 
 ---
 # Third lecture
-< presented by Marcus >
+`(presented by Marcus)`
 
 This lecture picks up our last "straw man", namely the humble Perceptron.
 
