@@ -10,9 +10,9 @@ This week is about getting some familiarity with the range of applications possi
 
 ## deep reinforcement learning
 `(Wednesday: led by Luke Inkster and Kelsey Jack)`
-* Algorithm combines a deep net and regular policy gradient ideas, on a new application.`
 * For a good place to start, read the [Karpathy summary and discussion](http://karpathy.github.io/2016/05/31/rl/)
-
+* That algorithm combines a deep net and regular policy gradient ideas, on a new application.`
+* [AlphaGo](https://research.googleblog.com/2016/01/alphago-mastering-ancient-game-of-go.html) uses both a policy net and a value prediction.
 
 ## Generative Adversarial Nets
 `(Friday: probably led by Yi Liu and Linfeng Gu)`
