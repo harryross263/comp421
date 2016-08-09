@@ -6,6 +6,7 @@ This week is about getting some familiarity with the range of applications possi
 * this is an application
 * Colouring in of gray-scale images - see the links for this in ["inspirational applications of deep learning"](http://machinelearningmastery.com/inspirational-applications-deep-learning/)
 ** [colorization](http://people.cs.uchicago.edu/~larsson/colorization/)
+* Some after thoughts on image colourization - https://www.scribd.com/document/320624109/Image-Colouring-Theory
 
 
 ## deep reinforcement learning
