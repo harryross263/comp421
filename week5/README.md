@@ -15,7 +15,10 @@ This week is about getting some familiarity with the range of applications possi
 * That algorithm combines a deep net and regular policy gradient ideas, on a new application.`
 * [AlphaGo](https://research.googleblog.com/2016/01/alphago-mastering-ancient-game-of-go.html) uses both a policy net and a value prediction.
 
-## Generative Adversarial Nets
-`(Friday: probably led by Yi Liu and Linfeng Gu)`
-* A 2014 paper by Goodfellow et al. that has already been cited 150 times
-* [Paper](http://arxiv.org/abs/1406.2661). (perhaps [this](http://cs.stanford.edu/people/karpathy/gan/) useful).
+## Reinforcement learning with Value Functions
+* [RL with Values](https://github.com/garibaldu/comp421/blob/master/week5/lecture_RL_via_Values.pdf)
+
+
+`(I decided to postpone the discussion of Generative Adversarial Nets until later in the course:
+probablhy to be led by Yi Liu and Linfeng Gu, 2014 paper by Goodfellow et al. that has already been cited 150 times [Paper](http://arxiv.org/abs/1406.2661), and perhaps [this](http://cs.stanford.edu/people/karpathy/gan/) useful.
+)`
