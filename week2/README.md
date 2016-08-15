@@ -2,7 +2,7 @@
 This lecture looks at a couple of important distributions used in machine learning.
 
 ## The Gaussian distribution
-`(presented by who?!)`
+`(presented by Edward)`
 
  * 1-D: mean and variance (1st two moments of distribution)
  * 2-D: mean is 2 numbers. Cov is 2x2 matrix. Examples, e.g. If Cov is/isn't diagonal.
@@ -14,7 +14,7 @@ This lecture looks at a couple of important distributions used in machine learni
  * Also [http://www.inf.ed.ac.uk/teaching/courses/inf2b/lectureSchedule.html](some lecture notes that I (Ed) found useful. Chapter 8 is on Gaussians.
 
 ## Categorical: the "one hot" distribution
-`(presented by who?!)`
+`(presented by Josiah)`
 
 
  * what's a Bernoulli?
