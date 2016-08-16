@@ -12,10 +12,12 @@
 ## DeepArt
 `(Tuesday: led by Linfeng and Yi)`
 * this is an application
+* here is the [paper](https://arxiv.org/pdf/1508.06576v2.pdf)
+* (MF: I found [this](https://www.robots.ox.ac.uk/~vgg/rg/slides/weidi_rg.pdf) a useful summary too, and pointed me to this earlier paper that just looks at the procedure used for making of images from representations i.e. [inversion](http://arxiv.org/pdf/1412.0035v1.pdf) )
 
-
-## Colouring in of gray-scale images
+## Q & A
 `(Friday: lab / tutorial session)`
-* autograd!
+* Q and A: email me questions by noon Thursday please.
+* also: autograd?
 
 
