@@ -29,6 +29,14 @@
    * 20 for a project (and short interview on it)
    * 40 for a 2 hour exam
  
+# Awesome resources
+
+* [Colah's blog](http://colah.github.io/)
+* [Karpathy's blog](http://karpathy.github.io/)
+* [Tensorflow playground](http://playground.tensorflow.org/)
+* [Gym for RL](https://gym.openai.com/)
+* 
+
 # Contribute!
 
 __Pull requests__ Add some notes of what you lecture up here, scribbles/notes of related problems, add links to resources, ... ?
