@@ -18,6 +18,13 @@
 ## Q & A
 `(Friday: lab / tutorial session)`
 * Q and A: email me questions by noon Thursday please.
-* also: autograd?
 
+1 bias weights 
+1 some seed articles - food for thought:
+   * http://ml.posthaven.com/machine-learning-done-wrong
+   * http://lemoxo.com/when-machine-learning-goes-wrong/
+   * http://www.informationweek.com/software/productivity-collaboration-apps/13-ways-machine-learning-can-steer-you-wrong/d/d-id/1326646?utm_content=buffer7f89b&utm_medium=social&utm_source=twitter%2Ecom&utm_campaign=buffer&image_number=13
+1 will machine learners experience pain and pleasure - discuss!..
+
+* also: autograd?
 
