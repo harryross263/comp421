@@ -25,6 +25,6 @@
    * http://lemoxo.com/when-machine-learning-goes-wrong/
    * http://www.informationweek.com/software/productivity-collaboration-apps/13-ways-machine-learning-can-steer-you-wrong/d/d-id/1326646?utm_content=buffer7f89b&utm_medium=social&utm_source=twitter%2Ecom&utm_campaign=buffer&image_number=13
 
-* also: autograd, and the second assignment (outline)
+* also: [autograd](https://github.com/HIPS/autograd), and the second assignment (soon to be released)
 * also: the [project](https://github.com/garibaldu/comp421/blob/master/Assignments/Project.md) to come - start thinking about what you might like to do
 
