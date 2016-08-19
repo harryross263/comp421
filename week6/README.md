@@ -1,4 +1,4 @@
-# Week 6 - several things this week!
+# Week 6 - several things this week: I can't think of a container phrase
 
 
 ## More about Reinforcement Learning
