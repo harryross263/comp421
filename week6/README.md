@@ -21,9 +21,9 @@
 
 1. bias weights - what's the point of them
 1. "ML gone wrong" - some food for thought:
-   * http://ml.posthaven.com/machine-learning-done-wrong
-   * http://lemoxo.com/when-machine-learning-goes-wrong/
-   * http://www.informationweek.com/software/productivity-collaboration-apps/13-ways-machine-learning-can-steer-you-wrong/d/d-id/1326646?utm_content=buffer7f89b&utm_medium=social&utm_source=twitter%2Ecom&utm_campaign=buffer&image_number=13
+   * [machine-learning-done-wrong](http://ml.posthaven.com/machine-learning-done-wrong)
+   * [when-machine-learning-goes-wrong](http://lemoxo.com/when-machine-learning-goes-wrong/)
+   * [13-ways-machine-learning-can-steer-you-wrong](http://www.informationweek.com/software/productivity-collaboration-apps/13-ways-machine-learning-can-steer-you-wrong/)
 
 * also: [autograd](https://github.com/HIPS/autograd), and the second assignment (soon to be released)
 * also: the [project](https://github.com/garibaldu/comp421/blob/master/Assignments/Project.md) to come - start thinking about what you might like to do
