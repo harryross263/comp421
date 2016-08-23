@@ -8,4 +8,4 @@ Marcus
 
 
 ### Assignment 2
-It's out, see link above.
+The [Second assignment](SecondAssignment.ipynb) is out. The due date is September the 12th, which is the "second Monday back" (but think about submitting it early for kicks, in order to move to other things?).
