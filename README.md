@@ -25,8 +25,8 @@
 
 # Assessment structure:
    * 5 for each of two presentations
-   * 10 for each of three assignments
-   * 20 for a project (and short interview on it)
+   * 10 for each of three [assignments](Assignments)
+   * 20 for a [project](Assignments) (and short interview on it)
    * 40 for a 2 hour exam
  
 # Awesome resources
